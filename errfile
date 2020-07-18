@@ -1,15 +1,0 @@
-WARNING:transformers.training_args:Using deprecated `--per_gpu_train_batch_size` argument which will be removed in a future version. Using `--per_device_train_batch_size` is preferred.
-WARNING:transformers.training_args:Using deprecated `--per_gpu_train_batch_size` argument which will be removed in a future version. Using `--per_device_train_batch_size` is preferred.
-Epoch:   0%|          | 0/1 [00:00<?, ?it/s]
-Iteration:   0%|          | 0/1 [00:00<?, ?it/s][AIteration:   0%|          | 0/1 [00:00<?, ?it/s]
-Epoch:   0%|          | 0/1 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "train_sample.py", line 118, in <module>
-    trainer.train()
-  File "/truba/home/mkutlu/.pyenv/versions/3.6.3/lib/python3.6/site-packages/transformers/trainer.py", line 499, in train
-    tr_loss += self._training_step(model, inputs, optimizer)
-  File "/truba/home/mkutlu/.pyenv/versions/3.6.3/lib/python3.6/site-packages/transformers/trainer.py", line 622, in _training_step
-    outputs = model(**inputs)
-  File "/truba/home/mkutlu/.pyenv/versions/3.6.3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
-    result = self.forward(*input, **kwargs)
-TypeError: forward() got an unexpected keyword argument 'labels'
