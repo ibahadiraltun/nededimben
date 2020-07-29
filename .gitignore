@@ -1,3 +1,4 @@
 .DS_Store
 dataset/
 web-app/node_modules/
+web-app/client/node_modules/

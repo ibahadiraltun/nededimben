@@ -4,7 +4,7 @@ from ktrain import text
 import pandas as pd
 import re
 # %%
-MODEL_NAME = 'E:/GitHub/teknofest/models/bert-model-1M'
+MODEL_NAME = '../models/bert-model-1M'
 
 # %%
 t = text.Transformer(MODEL_NAME, maxlen=500, classes=['NOT','OFF'])
@@ -42,7 +42,7 @@ model = t.get_classifier()
 learner = ktrain.get_learner(model, train_data=trn, val_data=val, batch_size=6)
 
 #%%
-learner.fit_onecycle(5e-5, 4)
+learner.fit_onecycle(5e-1, 1)
 
 
 # %%
