@@ -28,4 +28,4 @@ app.get('/api/search', (req, res) => {
   }
 })
 
-const server = app.listen(port, () => console.log(`Listening on port: ${port}...`))
+const server = app.listen(port, () => console.log(`Server is listening on port: ${port}...`))
