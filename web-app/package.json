@@ -2,15 +2,17 @@
   "name": "web-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "dev": "node -r esm index.js"
+    "dev": "node -r esm server/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "esm": "^3.2.25",
     "express": "^4.17.1",
+    "python-shell": "^2.0.1",
     "scrape-twitter": "^0.11.1"
   }
 }
