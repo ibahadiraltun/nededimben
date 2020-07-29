@@ -60,16 +60,16 @@ export default {
       dataCw: null,
       dataSa: null,
       colorsOffLang: [
-        '#ffe4e4',
-        '#93b5e1'
+        '#226600',
+        '#e62e00'
       ],
       colorsCw: [
-        '#fa7d09',
-        '#4a3f35'
+        '#e67300',
+        '#006bb3'
       ],
       colorsSa: [
         '#e79cc2',
-        '#e2979c',
+        '#4d0f00',
         '#01a9b4'
       ]
     }
@@ -86,21 +86,21 @@ export default {
     },
     setDataOffLang(data) {
       this.dataOffLang = [
-        ['not', data.neg],
-        ['offensive', data.pos]
+        ['saldırgan değil', data.neg],
+        ['saldırgan', data.pos]
       ]
     },
     setDataCw(data) {
       this.dataCw = [
-        ['not', data.neg],
-        ['checkworthy', data.pos]
+        ['teyide gerek yok', data.neg],
+        ['teyide muhtaç', data.pos]
       ]
     },
     setDataSa(data) {
       this.dataSa = [
-        ['negative', data.neg],
-        ['notr', data.notr],
-        ['positive', data.pos]
+        ['olumsuz', data.neg],
+        ['nötr', data.notr],
+        ['olumlu', data.pos]
       ]
     },
     async getPreds() {
