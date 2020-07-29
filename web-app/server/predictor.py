@@ -8,16 +8,22 @@ import pickle
 def block_print(): sys.stdout = open(os.devnull, 'w')
 def enable_print(): sys.stdout = sys.__stdout__
 
-model_off = ktrain.load_predictor('../pred/ft5m_off/')
-model_cw = ktrain.load_predictor('../pred/ft5m_cw')
-model_sa = ktrain.load_predictor('../pred/ft5m_sa')
+run_path = str(__file__).split('predictor.py')[0]
+
+model_off = ktrain.load_predictor(run_path + '../../models/fine-tune/ft5m_off/')
+model_cw = ktrain.load_predictor(run_path + '../../models/fine-tune/ft5m_cw/')
+model_sa = ktrain.load_predictor(run_path + '../../models/fine-tune/ft5m_sa/')
+
+model_off.preproc.model_name = run_path + '../../models/bert/bert-model5M/'
+model_cw.preproc.model_name = run_path + '../../models/bert/bert-model5M/'
+model_sa.preproc.model_name = run_path + '../../models/bert/bert-model5M/'
 
 def start_server():
   port = 5050
   s = socket.socket()
   s.bind(('', port))
   
-  print('listening port ', port)
+  print('Predictor is listening port {}...'.format(port))
   s.listen(5)
   block_print()
   while True:
@@ -39,14 +45,6 @@ def get_predictions(text):
     probs_off,
     probs_cw,
     probs_sa
-    # "off": {
-    #   "neg": str(probs_off[0]),
-    #   "pos": str(probs_off[1])
-    # },
-    # "cw": {
-    #   "neg": str(probs_cw[0]),
-    #   "pos": str(probs_cw[1])
-    # }
   ]
 
   return predictions
