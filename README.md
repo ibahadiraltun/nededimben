@@ -17,4 +17,7 @@ ft5m_off: saldırgan
 
 ## Fine Tune Modeller Kullanımı
 
-colab:
+Colab notebook üzerinden doğrudan kullanım örneği:
+```
+https://colab.research.google.com/drive/17eyvr29TaFlJMNTcX6A_uZHySSFFDY1y?usp=sharing
+```
