@@ -15,7 +15,7 @@ ft5m_off: saldırganlık analizi
 ft5m_cw: teyide muhtaçlık analizi
 ```
 
-Fine etmek için kullandığımız referans veri kaynakları:
+Fine tune etmek için kullandığımız referans veri kaynakları:
 ```
 ft5m_sa: https://github.com/sercankulcu/twitterdata
 ft5m_off: https://coltekin.github.io/offensive-turkish/
