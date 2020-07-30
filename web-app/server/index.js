@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
   var responseMessage = 'This is NLPIFY web-app.' +
                   ' To test it, please pass your tweet url to /search.' +
                   ' Sample request:' +
-                  ' http://localhost:8081/search?url={tweet_url}'
+                  ' http://localhost:8081/api/search?url={tweet_url}'
   res.send(responseMessage)
 });
 
