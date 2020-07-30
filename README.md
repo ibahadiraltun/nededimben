@@ -2,9 +2,10 @@
 
 
 # Modeller
-5 milyon Türkçe sosyal medya iletisi kullanılarak oluşturduğumuz RoBERT a modelimiz:
+1 ve 5 milyon Türkçe sosyal medya iletisi kullanılarak oluşturduğumuz RoBERT a modellerimiz:
 ```
 https://huggingface.co/YSKartal/berturk-social-5m
+https://huggingface.co/ibahadiraltun/berturk-social
 ```
 
 Bu modeli 3 task için ayrı ayrı fine tune ederek oluşturduğumuz modeller `/models/fine/` klasörü içerisinde:
