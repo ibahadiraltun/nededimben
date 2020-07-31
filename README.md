@@ -1,4 +1,5 @@
 # #nededimben
+![All Text](https://i.ibb.co/5109wQ5/logo.png)
 Herkesin bize ait bilgileri bilmesini istemeyiz. Ancak sosyal medyayı kullanırken farkında olmadan kendimize ait birçok kişisel bilgiyi de paylaşmaktayız. Doğal dil işleme alanındaki gelişmeler ile kişilerin paylaştıkları mesajlardan da siyasi görüş, psikolojik durum, konum, meslek gibi kişisel bilgilerine dair başarılı tahminler  yapabilen modeller geliştirilmektedir. Sosyal medya platformlarının uzun ve karmaşık kişisel veri kullanımı sözleşmeleri insanların kendilerine dair ne tür bilgilerin çıkarılabildiklerini anlamalarına yardımcı olmamaktadır.
 
 Her internet kullanıcısının kendisine dair ne tür bilgilerin çıkarılabildiğini bilme hakkı olduğuna inanıyoruz.  
@@ -67,13 +68,15 @@ Uygulamanın çalışması için gerekli olan tüm paketleri indirdik ve localho
 
 Harika! Artık localhost:8080/ üzerinden uygulamayı kullanabilirsiniz.
 
+![All Text](https://i.ibb.co/fx23XCd/app-ss.png)
+
 ## Referans
-https://github.com/stefan-it/turkish-bert
-https://huggingface.co/blog/how-to-train
-https://towardsdatascience.com/text-classification-with-hugging-face-transformers-in-tensorflow-2-without-tears-ee50e4f3e7ed
-https://towardsdatascience.com/bert-text-classification-in-3-lines-of-code-using-keras-264db7e7a358
-https://coltekin.github.io/offensive-turkish 
-https://github.com/sercankulcu/twitterdata
+https://github.com/stefan-it/turkish-bert  
+https://huggingface.co/blog/how-to-train  
+https://towardsdatascience.com/text-classification-with-hugging-face-transformers-in-tensorflow-2-without-tears-ee50e4f3e7ed  
+https://towardsdatascience.com/bert-text-classification-in-3-lines-of-code-using-keras-264db7e7a358  
+https://coltekin.github.io/offensive-turkish   
+https://github.com/sercankulcu/twitterdata  
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
