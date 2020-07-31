@@ -15,10 +15,10 @@ def get_tweet(url):
   username = get_username(url)
   tweetId = get_tweetId(url)
 
-  tweets = get_tweets(username)
+  tweets = get_tweets(username, pages = 1000)
   for t in tweets:
     if (t['tweetId'] == tweetId):
-      print(clean_tweet(t['text']))
+      print(' '.join(clean_tweet(t['text'])))
       sys.stdout.flush()
       break
 
