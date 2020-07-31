@@ -50,7 +50,7 @@ https://colab.research.google.com/drive/17eyvr29TaFlJMNTcX6A_uZHySSFFDY1y?usp=sh
 ## Web Uygulaması
 Eğittiğimiz modellerin nasıl kullanılabileceğine dair örnek bir web arayüzü geliştirdik. Uygulamamızın çalışma prensibi aşağıdaki gibidir:
 ![Alt text](https://i.ibb.co/BZKqyxx/app-structure.png)  
-Uygulamamız frontend tarafında vue.js ile çalışıp sizden mesaj veya tweet linki girmenizi beklemektedir. Girilen mesajlar sonrasında sunucu tarafında değerlendirilecektir. Bu esnada bize daha çok esneklik kazandırması açısından python ile oluşturduğumuz Predictor yapısı aslında arka tarafta tüm modelleri yükleyip Server tarafından iletilen isteklere gerekli yanıtları döndürmektedir. Bunu direk Server içerisinde halledebilirdik ancak bu sayede gerekirse python üzerinden yeni birçok eklenti geliştirebiliriz.  
+Uygulamamız frontend tarafında vue.js ile çalışıp sizden mesaj veya tweet linki girmenizi beklemektedir. Girilen mesajlar sonrasında sunucu tarafında değerlendirilecektir. Bu esnada bize daha çok esneklik kazandırması açısından python ile oluşturduğumuz Predictor yapısı aslında arka tarafta tüm modelleri yükleyip Server tarafından iletilen isteklere gerekli yanıtları döndürmektedir. Burada python kullanarak uygulamaya büyük bir esneklik kazandırmaktayız. İstendiğinde dil işleme üzerine yeni eklentiler rahatlıkla eklenebilir.  
 Uygulamayı indirip kullanmak için lütfen Web Kurulum bölümüne geçiniz.  
 
 ## Web Kurulum
@@ -68,10 +68,12 @@ Uygulamanın çalışması için gerekli olan tüm paketleri indirdik ve localho
 Harika! Artık localhost:8080/ üzerinden uygulamayı kullanabilirsiniz.
 
 ## Referans
-[Turkish-Bert](https://github.com/stefan-it/turkish-bert)  
-[Huggingface](https://huggingface.co/blog/)  
-[Off-Data](https://coltekin.github.io/offensive-turkish)  
-[Sent-Analysis](https://github.com/sercankulcu/twitterdata)  
+https://github.com/stefan-it/turkish-bert
+https://huggingface.co/blog/how-to-train
+https://towardsdatascience.com/text-classification-with-hugging-face-transformers-in-tensorflow-2-without-tears-ee50e4f3e7ed
+https://towardsdatascience.com/bert-text-classification-in-3-lines-of-code-using-keras-264db7e7a358
+https://coltekin.github.io/offensive-turkish 
+https://github.com/sercankulcu/twitterdata
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
