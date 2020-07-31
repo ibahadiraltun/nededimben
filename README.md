@@ -8,7 +8,7 @@ https://huggingface.co/YSKartal/berturk-social-5m
 https://huggingface.co/ibahadiraltun/berturk-social
 ```
 
-5 milyon ileti ile eğitilen modeli 3 task için ayrı ayrı fine tune ederek oluşturduğumuz modeller `/models/fine/` klasörü içerisinde:
+5 milyon ileti ile eğitilen modeli 3 task için ayrı ayrı fine tune ederek oluşturduğumuz modeller `/models/fine-tune/` klasörü içerisinde:
 ```
 ft5m_sa: duygu analizi
 ft5m_off: saldırganlık analizi
@@ -42,20 +42,23 @@ Uygulamayı indirip kullanmak için lütfen Web Kurulum bölümüne geçiniz.
 
 ## Web Kurulum
 Web kurulumuna başlamadan önce bilgisayarınızda `npm` ve `node` yüklemesinin yapılmış olması gerekmektedir. Eğer daha önceden yapmadıysanız [buradaki](https://www.npmjs.com/get-npm) adımları takip ederek indirebilirsiniz.  
-Öncelikle bu `git clone https://github.com/ibahadiraltun/teknofest.git` diyerek bu kodu indirin ve uygulamamızın bulunduğu dizine `cd web-app` ile gidin.
+Öncelikle bu `git clone https://github.com/ibahadiraltun/nededimben.git` diyerek bu kodu indirin ve uygulamamızın bulunduğu dizine `cd web-app` ile gidin.
 Sonrasında ise:  
-`1. pip install requirements.txt` - gerekli python paketlerini indirir.  
-`2. npm install` - server için gerekli olan node modüllerini indirir.  
-`3. cd client && npm install` - client için gerekli olan vue modüllerini indirir.  
+1. `pip install -r requirements.txt` - gerekli python paketlerini indirir.  
+2. `npm install` - server için gerekli olan node modüllerini indirir.  
+3. `cd client && npm install` - client için gerekli olan vue modüllerini indirir.  
 
 Uygulamanın çalışması için gerekli olan tüm paketleri indirdik ve localhost'umuzda artık kullanabiliriz. `web-app/` dizininde olduğunuzdan emin olun ve aşağıdaki komutları çalıştırın:  
-`1. npm run dev` - server tarafını localhost:8081 de çalıştırır.  
-`2. cd client && npm run serve` client tarafını localhost:8080 de çalıştırır.  
+1. `npm run dev` - server tarafını localhost:8081 de çalıştırır.
+2. yeni bir komut sekmesinde `cd client && npm run serve` client tarafını localhost:8080 de çalıştırır.
 
 Harika! Artık localhost:8080/ üzerinden uygulamayı kullanabilirsiniz.
 
 ## Referans
-...
+[Turkish-Bert](https://github.com/stefan-it/turkish-bert)  
+[Huggingface](https://huggingface.co/blog/)  
+[Off-Data](https://coltekin.github.io/offensive-turkish)  
+[Sent-Analysis](https://github.com/sercankulcu/twitterdata)  
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
