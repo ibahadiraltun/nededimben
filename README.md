@@ -58,4 +58,6 @@ Harika! Artık localhost:8080/ üzerinden uygulamayı kullanabilirsiniz.
 ...
 
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
