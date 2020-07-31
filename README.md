@@ -1,8 +1,21 @@
 # #nededimben
-Projemizin amacı ...
+Herkesin bize ait bilgileri bilmesini istemeyiz. Ancak sosyal medyayı kullanırken farkında olmadan kendimize ait birçok kişisel bilgiyi de paylaşmaktayız. Doğal dil işleme alanındaki gelişmeler ile kişilerin paylaştıkları mesajlardan da siyasi görüş, psikolojik durum, konum, meslek gibi kişisel bilgilerine dair başarılı tahminler  yapabilen modeller geliştirilmektedir. Sosyal medya platformlarının uzun ve karmaşık kişisel veri kullanımı sözleşmeleri insanların kendilerine dair ne tür bilgilerin çıkarılabildiklerini anlamalarına yardımcı olmamaktadır.
 
-## Modeller
-1 ve 5 milyon Türkçe sosyal medya iletisi kullanılarak oluşturduğumuz RoBERT a modellerimiz:
+Her internet kullanıcısının kendisine dair ne tür bilgilerin çıkarılabildiğini bilme hakkı olduğuna inanıyoruz.  
+**Çünkü bilgi güçlü bir silahtır**
+
+## Proje Süreci
+Doğal dil işleme üzerine yapılan araştırmalar sonucu birçok model ile Türkçe üzerine dil analizi yapmak mümkündür. Özellikle Google tarafından geliştirilen BERT metodu kullanarak eğitilen modeller ile duygu analizi, konum, meslek vb. alanlarda güzel sonuçlar elde edebilmekteyiz.
+
+Ancak bunları yaparken kullandığımız hazır-önceden eğitilimiş- modeller Türkçe harici bir dil üzerinden eğitilmiş olduğundan sonuç Türkçe dilinin yapısal özelliklerinden uzak olmaktadır. Bundan dolayı ise Türkçe veri kullanarak eğitilen [BERTurk](https://github.com/stefan-it/turkish-bert) modeli sunulmuştur.
+
+BERTurk; çoğunlukla Wikipedia verisi kullanarak eğitildiğinden dili çok düzgün ve kurallıdır. **Ancak sosyal medya paylaşımlarının dili genel olarak dilbilgisi bakımından hatalı ve devriktir.**
+
+Bu duruma çözüm/alternatif olarak kendi eğittiğimiz BERTurk-Social modelini Türkçe Doğal Dil İşleme topluluğuna sunmaktayız.
+
+## Paylaşılan Modeller
+Paylaştığımız modeller Türkçe sosyal medya verisi kullanarak oluşturduğumuz 56 milyonluk veri iletisinin 5 milyonluk kısmından eğitilmiştir. Ayrıca BERT metodu yerine onun gibi ancak bazı istisnalar yaparak daha hızlı çalışan RoBERTa metodunu kullandık. 
+1 ve 5 milyon Türkçe sosyal medya iletisi kullanılarak oluşturduğumuz RoBERTa modellerimiz:
 ```
 https://huggingface.co/YSKartal/berturk-social-5m
 https://huggingface.co/ibahadiraltun/berturk-social
