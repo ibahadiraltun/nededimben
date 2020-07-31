@@ -53,15 +53,15 @@ https://colab.research.google.com/drive/17eyvr29TaFlJMNTcX6A_uZHySSFFDY1y?usp=sh
 ## Web Uygulaması
 Eğittiğimiz modellerin nasıl kullanılabileceğine dair örnek bir web arayüzü geliştirdik. Uygulamamızın çalışma prensibi aşağıdaki gibidir:
 ![Alt text](https://i.ibb.co/BZKqyxx/app-structure.png)  
-Uygulamamız frontend tarafında vue.js ile çalışıp sizden mesaj veya tweet linki girmenizi beklemektedir. Girilen mesajlar sonrasında sunucu tarafında değerlendirilecektir. Bu esnada bize daha çok esneklik kazandırması açısından python ile oluşturduğumuz Predictor yapısı aslında arka tarafta tüm modelleri yükleyip Server tarafından iletilen isteklere gerekli yanıtları döndürmektedir. Burada python kullanarak uygulamaya büyük bir esneklik kazandırmaktayız. İstendiğinde dil işleme üzerine yeni eklentiler rahatlıkla eklenebilir.  
+Uygulamamız frontend tarafında vue.js ile çalışıp sizden mesaj veya tweet linki girmenizi beklemektedir. Girilen mesajlar sonrasında sunucu tarafında değerlendirilecektir. Bu esnada bize daha çok esneklik kazandırması açısından python ile oluşturduğumuz Predictor yapısı aslında arka tarafta tüm modelleri yükleyip Server tarafından iletilen isteklere gerekli yanıtları döndürmektedir. Burada python kullanarak uygulamaya büyük bir esneklik kazandırmaktayız. Bu sayede istendiğinde dil işleme üzerine yeni eklentiler rahatlıkla geliştirilebilir.  
 
 ## Web Kurulum
 Web kurulumuna başlamadan önce bilgisayarınızda `npm` ve `node` yüklemesinin yapılmış olması gerekmektedir. Eğer daha önceden yapmadıysanız [buradaki](https://www.npmjs.com/get-npm) adımları takip ederek indirebilirsiniz.  
 Öncelikle bu `git clone https://github.com/ibahadiraltun/nededimben.git` diyerek bu kodu indirin ve uygulamamızın bulunduğu dizine `cd web-app` ile gidin.
 Sonrasında ise:  
-1. `pip install -r requirements.txt` - gerekli python paketlerini indirir.  
+1. `pip3 install -r requirements.txt` - gerekli python paketlerini indirir.  
 2. `npm install` - server için gerekli olan node modüllerini indirir.  
-3. `cd client && npm install` - client için gerekli olan vue modüllerini indirir.  
+3. `cd client && npm install` - client için gerekli olan node modüllerini indirir.  
 
 Uygulamanın çalışması için gerekli olan tüm paketleri indirdik ve localhost'umuzda artık kullanabiliriz. `web-app/` dizininde olduğunuzdan emin olun ve aşağıdaki komutları çalıştırın:  
 1. `npm run dev` - server tarafını localhost:8081 de çalıştırır.
@@ -71,6 +71,9 @@ Harika! Artık localhost:8080/ üzerinden uygulamayı kullanabilirsiniz.
 **Not**: Server ilk kurulduğunda modelin yüklenmesi yaklaşık 30sn sürebilmektedir. Bu sürede istekler yanıtsız kalacaktır. 
 
 ![All Text](https://i.ibb.co/fx23XCd/app-ss.png)
+
+## Test
+Uygulama `Node v12.18.2 ve Python 3.7.0` ortamında, `macOS 10.15` sürümü ile test edilmiştir. Python tarafında kullanılan kütüphaneler versiyon olarak farklılık gösterebilmektedir. 
 
 ## Referans
 https://github.com/stefan-it/turkish-bert  
