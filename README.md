@@ -75,6 +75,10 @@ Harika! Artık localhost:8080/ üzerinden uygulamayı kullanabilirsiniz.
 ## Test
 Uygulama `Node v12.18.2 ve Python 3.7.0` ortamında, `macOS 10.15` sürümü ile test edilmiştir. Python tarafında kullanılan kütüphaneler versiyon olarak farklılık gösterebilmektedir. 
 
+## Sunum ve Demo
+
+Proje sunumuna ile colab ve web uygulaması demo videolarına [buradan](https://drive.google.com/drive/folders/1Q1AacR6vTuMMUvpSn3tIaWCDyFMBUhkH?usp=sharing) ulaşabilirsiniz. 
+
 ## Referans
 https://github.com/stefan-it/turkish-bert  
 https://huggingface.co/blog/how-to-train  
